@@ -201,6 +201,37 @@ a:hover {
     box-shadow: 0 0 15px var(--glow-color);
 }
 
+/* Home hero CTA size consistency */
+.hero-cta-btn {
+    min-width: 265px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Home flexible pricing readability/alignment */
+.flexible-pricing-section .package-price {
+    color: var(--text-primary);
+}
+.flexible-pricing-section .glass-card {
+    text-align: center;
+}
+.flexible-pricing-section .glass-card.d-flex.flex-column {
+    align-items: center;
+}
+.flexible-pricing-section .glass-card ul {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.flexible-pricing-section .glass-card ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Cards - Glassmorphism */
 .glass-card {
     background: var(--card-bg);
@@ -381,6 +412,16 @@ a:hover {
     padding: 4rem 0 2rem;
     margin-top: auto;
 }
+.footer form.d-flex {
+    flex-wrap: wrap;
+}
+.footer form.d-flex .form-control {
+    flex: 1 1 180px;
+    min-width: 0;
+}
+.footer form.d-flex .btn {
+    flex: 0 0 auto;
+}
 .social-icon {
     display: inline-flex;
     align-items: center;
@@ -396,6 +437,38 @@ a:hover {
     background: var(--primary-accent);
     color: #000;
     transform: translateY(-3px);
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: var(--secondary-bg);
+    color: var(--text-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1040;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.25s ease;
+}
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.back-to-top:hover {
+    color: #000;
+    background: var(--primary-accent);
+    border-color: var(--primary-accent);
 }
 
 /* Forms */
@@ -421,7 +494,32 @@ a:hover {
 .z-index-2 { z-index: 2; }
 .min-vh-100 { min-height: 100vh; }
 
+/* Auth page top-right controls (desktop only) */
+.auth-top-controls {
+    position: static;
+}
+
+@media (min-width: 992px) {
+    .auth-page .auth-top-controls {
+        position: fixed;
+        top: 20px;
+        right: 24px;
+        z-index: 1035;
+        margin-bottom: 0 !important;
+    }
+}
+
 /* Responsive adjustments */
+@media (max-width: 1199.98px) {
+    .navbar-nav .nav-link::after {
+        display: none;
+    }
+
+    .flexible-pricing-section .row.align-items-center {
+        align-items: flex-start !important;
+    }
+}
+
 @media (max-width: 991.98px) {
     .sidebar {
         position: fixed;

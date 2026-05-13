@@ -96,6 +96,33 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Trigger on load
 
+    // --- Back to Top Button (footer pages) ---
+    const footer = document.querySelector('footer');
+    if (footer && !document.querySelector('.back-to-top')) {
+        const backToTop = document.createElement('a');
+        backToTop.href = '#';
+        backToTop.className = 'back-to-top';
+        backToTop.setAttribute('aria-label', 'Back to top');
+        backToTop.innerHTML = '<i class="bi bi-arrow-up"></i>';
+        document.body.appendChild(backToTop);
+
+        const toggleBackToTop = () => {
+            if (window.scrollY > 250) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        };
+
+        window.addEventListener('scroll', toggleBackToTop);
+        toggleBackToTop();
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
     // --- Counter Animations ---
     const counters = document.querySelectorAll('.counter-value');
     counters.forEach(counter => {
