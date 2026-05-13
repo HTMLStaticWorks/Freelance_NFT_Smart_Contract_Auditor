@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite NFT Smart Contract Auditor | Web3 Security SaaS</title>
+    <meta name="description" content="Professional NFT smart contract auditing with vulnerability analysis, reentrancy detection, gas optimization insights, and enterprise-grade blockchain security reporting.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Prism.js CSS (Dark Theme) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-theme="dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-glass">
+        <div class="container-fluid px-4">
+            <!-- Left: Logo & Brand -->
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-shield-lock-fill"></i>
+                <span>Audit<span class="text-primary-accent">Node</span></span>
+            </a>
+            
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler border-0 shadow-none text-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            
+            <!-- Center & Right -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+                    <a href="#" id="rtlToggle" class="btn btn-outline-secondary d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px; font-size: 0.8rem;" title="Toggle RTL">RTL</a>
+                    <a href="#" id="themeToggle" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Toggle Theme"><i class="bi bi-sun fs-5"></i></a>
+                    <a href="dashboard.html" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Dashboard"><i class="bi bi-speedometer2 fs-5"></i></a>
+                    <a href="login.html" class="btn btn-gradient fw-semibold ms-2">Client Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div id="particles-js"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 fade-up">
+                    <div class="badge badge-soft-info mb-3 px-3 py-2 rounded-pill">
+                        <i class="bi bi-shield-check me-2"></i>Enterprise-Grade Blockchain Security
+                    </div>
+                    <h1 class="display-4 fw-bold mb-4">
+                        Secure NFT Smart Contracts Before <span class="text-gradient">Attackers Find The Flaws</span>
+                    </h1>
+                    <p class="lead text-secondary mb-5">
+                        Professional NFT smart contract auditing with vulnerability analysis, reentrancy detection, gas optimization insights, and enterprise-grade blockchain security reporting.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="contact.html" class="btn btn-gradient btn-lg">Request Smart Contract Audit</a>
+                        <a href="dashboard.html" class="btn btn-outline-glow btn-lg"><i class="bi bi-speedometer2 me-2"></i>View Security Dashboard</a>
+                    </div>
+                    
+                    <div class="row mt-5">
+                        <div class="col-4">
+                            <h3 class="mb-1 fw-bold"><span class="counter-value" data-target="150">0</span>+</h3>
+                            <p class="text-secondary small mb-0">Contracts Audited</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="mb-1 fw-bold">$<span class="counter-value" data-target="500">0</span>M+</h3>
+                            <p class="text-secondary small mb-0">Assets Secured</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="mb-1 fw-bold"><span class="counter-value" data-target="450">0</span>+</h3>
+                            <p class="text-secondary small mb-0">Vulns Patched</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-visual fade-up position-relative">
+                    <!-- NFT Image Card -->
+                    <div class="glass-card neon-border p-2 position-relative" style="z-index: 2;">
+                        <img src="https://storage.ghost.io/c/d1/14/d114cb3d-6b95-4710-8c36-fdcbff0ed991/content/images/2025/06/nft-min-1.jpg" alt="NFT Smart Contract Auditing" class="img-fluid rounded w-100 shadow-lg">
+                    </div>
+                    
+                    <!-- Floating Elements -->
+                    <div class="position-absolute glass-card px-3 py-2 border-success" style="top: 10%; right: 0; z-index: 3; animation: float 4s ease-in-out infinite;">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>100% Safe Math
+                    </div>
+                    <div class="position-absolute glass-card px-3 py-2 border-primary" style="bottom: 10%; left: 0; z-index: 3; animation: float 5s ease-in-out infinite alternate;">
+                        <i class="bi bi-lightning-charge-fill text-primary-accent me-2"></i>Gas Opt: -45%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Modules Section -->
+    <section class="py-5 bg-secondary-dark">
+        <div class="container py-5">
+            <div class="text-center mb-5 fade-up">
+                <span class="text-primary-accent fw-bold tracking-wide text-uppercase small">Comprehensive Solutions</span>
+                <h2 class="display-6 mt-2">Enterprise-Grade Audit Modules</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4 fade-up">
+                    <div class="glass-card h-100">
+                        <div class="text-primary-accent fs-1 mb-3"><i class="bi bi-bug"></i></div>
+                        <h4 class="mb-3">Vulnerability Analysis</h4>
+                        <ul class="list-unstyled text-secondary mb-0">
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Reentrancy detection</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Integer overflow analysis</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Access control weaknesses</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Front-running risk detection</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" style="transition-delay: 0.1s;">
+                    <div class="glass-card h-100 neon-border">
+                        <div class="text-secondary-accent fs-1 mb-3"><i class="bi bi-fuel-pump"></i></div>
+                        <h4 class="mb-3">Gas Optimization</h4>
+                        <ul class="list-unstyled text-secondary mb-0">
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Loop optimization</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Storage packing review</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Contract efficiency scores</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Transaction fee estimations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" style="transition-delay: 0.2s;">
+                    <div class="glass-card h-100">
+                        <div class="text-success fs-1 mb-3"><i class="bi bi-patch-check"></i></div>
+                        <h4 class="mb-3">Security Certificates</h4>
+                        <ul class="list-unstyled text-secondary mb-0">
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Verified secure indicators</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Downloadable PDF reports</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>On-chain audit signatures</li>
+                            <li><i class="bi bi-check2 text-success me-2"></i>Client trust badges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reentrancy Showcase Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 fade-up">
+                    <span class="text-alert-red fw-bold text-uppercase small"><i class="bi bi-exclamation-triangle-fill me-1"></i> Attack Vector Spotlight</span>
+                    <h2 class="display-6 mt-2 mb-4">The Reentrancy Threat</h2>
+                    <p class="text-secondary mb-4">Reentrancy occurs when external contract calls are allowed to make new calls to the calling contract before the initial execution is complete. This is the most infamous smart contract vulnerability.</p>
+                    
+                    <div class="accordion glass-card p-0" id="reentrancyAccordion">
+                        <div class="accordion-item bg-transparent border-0 border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    <i class="bi bi-x-circle text-danger me-2"></i> Vulnerable Implementation
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#reentrancyAccordion">
+                                <div class="accordion-body p-0">
+<div class="code-preview m-3 border-danger">
+<pre><code class="language-solidity">mapping(address => uint) public balances;
+
+function withdraw() public {
+    uint bal = balances[msg.sender];
+    require(bal > 0);
+    // VULNERABLE: State updated AFTER external call
+    (bool sent, ) = msg.sender.call{value: bal}("");
+    require(sent, "Failed to send Ether");
+    balances[msg.sender] = 0;
+}</code></pre>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    <i class="bi bi-check-circle text-success me-2"></i> Secure Implementation (CEI Pattern)
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#reentrancyAccordion">
+                                <div class="accordion-body p-0">
+<div class="code-preview m-3 border-success">
+<pre><code class="language-solidity">mapping(address => uint) public balances;
+
+function withdraw() public {
+    uint bal = balances[msg.sender];
+    require(bal > 0);
+    // SECURE: Checks, Effects, Interactions pattern
+    balances[msg.sender] = 0; // State updated BEFORE external call
+    (bool sent, ) = msg.sender.call{value: bal}("");
+    require(sent, "Failed to send Ether");
+}</code></pre>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up">
+                    <div class="glass-card text-center p-4 position-relative">
+                        <!-- Attack Vector Image -->
+                        <div class="mb-4 rounded overflow-hidden position-relative neon-border border-danger">
+                            <img src="https://media.licdn.com/dms/image/v2/D4E12AQFUWJrMq8ER4A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1655355223295?e=2147483647&v=beta&t=M8dAw0HPWgFffzDukhewVV6PoxAQ0pOAxGN2ofSIiz8" alt="Reentrancy Attack Vector Flow" class="img-fluid w-100">
+                            <div class="position-absolute w-100 h-100 border border-danger top-0 start-0 rounded" style="animation: pulse 2s infinite; pointer-events: none;"></div>
+                        </div>
+                        <h4 class="mb-3">Attack Flow Visualization</h4>
+                        <p class="text-secondary small mb-0">The malicious contract repeatedly calls the vulnerable withdrawal function before its own balance is set to zero, draining the pool.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 1: Supported Networks -->
+    <section class="py-5 bg-secondary-dark border-top border-secondary">
+        <div class="container py-4 fade-up">
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <p class="text-secondary text-uppercase tracking-wide small fw-bold mb-0">Securing Leading Ecosystems</p>
+                </div>
+            </div>
+            <div class="row g-4 align-items-center justify-content-center text-secondary opacity-75">
+                <div class="col-6 col-md-2 text-center fs-5 fw-bold"><i class="bi bi-diamond-fill me-2"></i>Ethereum</div>
+                <div class="col-6 col-md-2 text-center fs-5 fw-bold"><i class="bi bi-hexagon-fill me-2"></i>Polygon</div>
+                <div class="col-6 col-md-2 text-center fs-5 fw-bold"><i class="bi bi-triangle-fill me-2"></i>Arbitrum</div>
+                <div class="col-6 col-md-2 text-center fs-5 fw-bold"><i class="bi bi-circle-fill me-2"></i>Optimism</div>
+                <div class="col-6 col-md-2 text-center fs-5 fw-bold"><i class="bi bi-boxes me-2"></i>Base</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 2: Pricing Plans Preview -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 fade-up">
+                <span class="text-primary-accent fw-bold text-uppercase small">Flexible Pricing</span>
+                <h2 class="display-6 mt-2">Enterprise Security Packages</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="glass-card h-100 p-4 text-center hover-effect d-flex flex-column">
+                        <h4 class="mb-3">Standard Audit</h4>
+                        <h2 class="fw-bold mb-4 text-white">From $3k</h2>
+                        <ul class="list-unstyled text-secondary mb-4 flex-grow-1">
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Automated Scan</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Manual Review (1 Auditor)</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>PDF Report</li>
+                        </ul>
+                        <a href="pricing.html" class="btn btn-outline-glow w-100 mt-auto">View Details</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.1s;">
+                    <div class="glass-card h-100 p-4 text-center neon-border transform-hover position-relative d-flex flex-column" style="transform: scale(1.05); z-index: 2;">
+                        <div class="position-absolute top-0 start-50 translate-middle badge bg-gradient rounded-pill px-3 py-2 text-white" style="background: var(--gradient-accent);">Most Popular</div>
+                        <h4 class="mb-3 mt-3 text-primary-accent">Premium Review</h4>
+                        <h2 class="fw-bold mb-4 text-white">From $8k</h2>
+                        <ul class="list-unstyled text-secondary mb-4 flex-grow-1">
+                            <li class="mb-2"><i class="bi bi-check2 text-primary-accent me-2"></i>Advanced Static Analysis</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-primary-accent me-2"></i>Manual Review (2 Auditors)</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-primary-accent me-2"></i>Gas Optimization</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-primary-accent me-2"></i>Free Re-audit</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-gradient w-100 mt-auto">Request Quote</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.2s;">
+                    <div class="glass-card h-100 p-4 text-center hover-effect d-flex flex-column">
+                        <h4 class="mb-3">Penetration Test</h4>
+                        <h2 class="fw-bold mb-4 text-white">Custom</h2>
+                        <ul class="list-unstyled text-secondary mb-4 flex-grow-1">
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Live Exploit Simulations</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Flash Loan Attack Tests</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>Oracle Manipulation</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-secondary border-secondary text-white w-100 mt-auto">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 3: Final CTA -->
+    <section class="py-5 position-relative overflow-hidden bg-secondary-dark border-top border-secondary">
+        <div class="container py-5 text-center position-relative z-index-2 fade-up">
+            <div class="glass-card p-5 border-secondary-accent mx-auto" style="max-width: 800px; box-shadow: 0 0 40px rgba(124, 58, 237, 0.1);">
+                <i class="bi bi-shield-check display-3 text-success mb-3 d-block" style="filter: drop-shadow(0 0 15px rgba(34, 197, 94, 0.5));"></i>
+                <h2 class="display-5 fw-bold mb-3">Ready to Secure Your Smart Contracts?</h2>
+                <p class="text-secondary mb-4 mx-auto" style="max-width: 500px;">Don't let a vulnerability destroy your project's reputation. Get an enterprise-grade security audit today.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                    <a href="contact.html" class="btn btn-gradient btn-lg px-5 py-3 fw-bold">Request an Audit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-inline-flex" href="index.html">
+                        <i class="bi bi-shield-lock-fill"></i>
+                        <span>Audit<span class="text-primary-accent">Node</span></span>
+                    </a>
+                    <p class="text-secondary mb-4">A world-class NFT smart contract security intelligence platform trusted by elite Web3 projects. We secure the future of decentralized finance and digital assets.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-medium"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Services</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-primary">NFT Audits</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-primary">DeFi Protocols</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-primary">Gas Optimization</a></li>
+                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none hover-primary">Penetration Testing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Platform</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="dashboard.html" class="text-secondary text-decoration-none hover-primary">Client Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-secondary small mb-3">Subscribe for the latest Web3 security alerts and vulnerability insights.</p>
+                    <form class="d-flex gap-2 mb-3">
+                        <input type="email" class="form-control form-control-glass" placeholder="Enter your email">
+                        <button class="btn btn-gradient" type="button">Subscribe</button>
+                    </form>
+                    <small class="text-secondary" style="font-size: 0.75rem;">* We respect your privacy. No spam.</small>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="text-secondary small mb-0">&copy; 2026 AuditNode Security. All rights reserved.</p>
+                <div class="d-flex gap-3 mt-3 mt-md-0">
+                    <a href="#" class="text-secondary small text-decoration-none hover-primary">Privacy Policy</a>
+                    <a href="#" class="text-secondary small text-decoration-none hover-primary">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-solidity.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        // Init Particles JS for Hero
+        if(document.getElementById('particles-js')) {
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": { "value": 40, "density": { "enable": true, "value_area": 800 } },
+                    "color": { "value": "#00f5d4" },
+                    "shape": { "type": "circle" },
+                    "opacity": { "value": 0.2, "random": false },
+                    "size": { "value": 3, "random": true },
+                    "line_linked": { "enable": true, "distance": 150, "color": "#7c3aed", "opacity": 0.2, "width": 1 },
+                    "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true },
+                    "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 0.5 } }, "push": { "particles_nb": 4 } }
+                },
+                "retina_detect": true
+            });
+        }
+    </script>
+</body>
+</html>

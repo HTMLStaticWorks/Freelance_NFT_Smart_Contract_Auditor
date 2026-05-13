@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Security Insights | AuditNode</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-theme="dark">
+
+    <nav class="navbar navbar-expand-xl navbar-glass">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-shield-lock-fill"></i>
+                <span>Audit<span class="text-primary-accent">Node</span></span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none text-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+                    <a href="#" id="rtlToggle" class="btn btn-outline-secondary d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px; font-size: 0.8rem;" title="Toggle RTL">RTL</a>
+                    <a href="#" id="themeToggle" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Toggle Theme"><i class="bi bi-sun fs-5"></i></a>
+                    <a href="dashboard.html" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Dashboard"><i class="bi bi-speedometer2 fs-5"></i></a>
+                    <a href="login.html" class="btn btn-gradient fw-semibold ms-2">Client Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-secondary-dark border-bottom border-secondary">
+        <div class="container py-5 text-center fade-up">
+            <h1 class="display-4 fw-bold">Security Research & Insights</h1>
+            <p class="lead text-secondary mx-auto mt-3" style="max-width: 700px;">Latest vulnerability disclosures, gas optimization techniques, and Web3 security news from the AuditNode team.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 1: Featured Article -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5 fade-up">
+                <span class="text-primary-accent fw-bold text-uppercase small">Featured</span>
+                <h2 class="display-6 mt-2">Essential Reading</h2>
+            </div>
+            <div class="glass-card p-0 overflow-hidden fade-up border-primary neon-border">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-7">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80" alt="Featured Article" class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 400px; filter: contrast(1.1);">
+                    </div>
+                    <div class="col-lg-5 p-5">
+                        <span class="badge bg-danger mb-3 px-3 py-2">Critical Vulnerability</span>
+                        <h3 class="mb-3">The Fall of the DAO: Lessons Learned 10 Years Later</h3>
+                        <p class="text-secondary small mb-4">By Marcus V. • Oct 24, 2026 • 12 min read</p>
+                        <p class="text-secondary mb-4">A comprehensive retrospective on the most infamous smart contract hack in history. We break down the reentrancy vulnerability line-by-line and examine how modern compiler updates and auditing practices would have prevented it.</p>
+                        <a href="#" class="btn btn-gradient">Read Full Report <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Latest Insights -->
+    <section class="py-5 bg-secondary-dark border-top border-secondary">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-end mb-5 fade-up">
+                <div>
+                    <span class="text-primary-accent fw-bold text-uppercase small">Recent</span>
+                    <h2 class="display-6 mt-2 mb-0">Latest Insights</h2>
+                </div>
+                <a href="#" class="btn btn-outline-glow d-none d-md-inline-flex">View All Posts</a>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="glass-card h-100 p-0 overflow-hidden hover-effect">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Flash Loan" class="img-fluid w-100" style="height: 220px; object-fit: cover; filter: brightness(0.8);">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge bg-danger px-3 py-2">DeFi Security</span>
+                            </div>
+                        </div>
+                        <div class="p-4 d-flex flex-column h-100">
+                            <h5 class="mb-3">The Anatomy of a Flash Loan Attack</h5>
+                            <p class="text-secondary small mb-3">Oct 12, 2026 • 5 min read</p>
+                            <p class="text-secondary mb-4 flex-grow-1">A deep dive into how attackers utilize flash loans to manipulate AMM oracles and drain liquidity pools.</p>
+                            <a href="#" class="text-primary-accent fw-bold text-decoration-none mt-auto">Read Article <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.1s;">
+                    <div class="glass-card h-100 p-0 overflow-hidden hover-effect">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?auto=format&fit=crop&w=600&q=80" alt="Gas Optimization" class="img-fluid w-100" style="height: 220px; object-fit: cover; filter: brightness(0.8);">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge bg-warning text-dark px-3 py-2">Optimization</span>
+                            </div>
+                        </div>
+                        <div class="p-4 d-flex flex-column h-100">
+                            <h5 class="mb-3">Mastering Storage Variable Packing</h5>
+                            <p class="text-secondary small mb-3">Sep 28, 2026 • 8 min read</p>
+                            <p class="text-secondary mb-4 flex-grow-1">Learn how to arrange your Solidity struct variables to save significant gas on SSTORE operations.</p>
+                            <a href="#" class="text-primary-accent fw-bold text-decoration-none mt-auto">Read Article <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.2s;">
+                    <div class="glass-card h-100 p-0 overflow-hidden hover-effect">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&w=600&q=80" alt="Access Control" class="img-fluid w-100" style="height: 220px; object-fit: cover; filter: brightness(0.8);">
+                            <div class="position-absolute top-0 start-0 m-3">
+                                <span class="badge bg-success px-3 py-2">Best Practices</span>
+                            </div>
+                        </div>
+                        <div class="p-4 d-flex flex-column h-100">
+                            <h5 class="mb-3">Secure Access Control Patterns</h5>
+                            <p class="text-secondary small mb-3">Sep 15, 2026 • 6 min read</p>
+                            <p class="text-secondary mb-4 flex-grow-1">Beyond Ownable: Implementing robust role-based access control (RBAC) in enterprise Web3 applications.</p>
+                            <a href="#" class="text-primary-accent fw-bold text-decoration-none mt-auto">Read Article <i class="bi bi-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 d-md-none fade-up">
+                <a href="#" class="btn btn-outline-glow">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Newsletter -->
+    <section class="py-5 position-relative overflow-hidden border-top border-secondary">
+        <div class="position-absolute w-100 h-100 top-0 start-0 bg-primary-dark opacity-50 z-index-1"></div>
+        <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=1500&q=80" alt="Abstract Data" class="position-absolute w-100 h-100 top-0 start-0 opacity-25" style="object-fit: cover; filter: hue-rotate(250deg);">
+        
+        <div class="container py-5 text-center position-relative z-index-2 fade-up">
+            <div class="glass-card p-5 border-secondary-accent mx-auto backdrop-blur-md" style="max-width: 700px;">
+                <i class="bi bi-envelope-paper-heart display-4 text-primary-accent mb-3 d-block"></i>
+                <h2 class="fw-bold mb-3">Never Miss a Vulnerability Disclosure</h2>
+                <p class="text-secondary mb-4 mx-auto">Join 15,000+ developers receiving our weekly technical newsletter covering the latest Web3 exploits, zero-days, and optimization tricks.</p>
+                
+                <form class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                    <input type="email" class="form-control form-control-glass py-3 px-4" placeholder="Enter your email address" style="max-width: 350px;">
+                    <button class="btn btn-gradient py-3 px-4 fw-bold" type="button">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-secondary-dark border-top border-secondary">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-inline-flex" href="index.html">
+                        <i class="bi bi-shield-lock-fill"></i>
+                        <span>Audit<span class="text-primary-accent">Node</span></span>
+                    </a>
+                    <p class="text-secondary mb-4">A world-class NFT smart contract security intelligence platform trusted by elite Web3 projects. We secure the future of decentralized finance and digital assets.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-medium"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Services</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">NFT Audits</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">DeFi Protocols</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">Gas Optimization</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">Penetration Testing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Platform</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="dashboard.html" class="text-secondary text-decoration-none hover-primary">Client Dashboard</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-secondary text-decoration-none hover-primary">Pricing</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-secondary text-decoration-none hover-primary">Contact Us</a></li>
+                        <li class="mb-2"><a href="login.html" class="text-secondary text-decoration-none hover-primary">Client Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-secondary small mb-3">Subscribe for the latest Web3 security alerts and vulnerability insights.</p>
+                    <form class="d-flex gap-2 mb-3">
+                        <input type="email" class="form-control form-control-glass" placeholder="Enter your email">
+                        <button class="btn btn-gradient" type="button">Subscribe</button>
+                    </form>
+                    <small class="text-secondary" style="font-size: 0.75rem;">* We respect your privacy. No spam.</small>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="text-secondary small mb-0">&copy; 2026 AuditNode Security. All rights reserved.</p>
+                <div class="d-flex gap-3 mt-3 mt-md-0">
+                    <a href="#" class="text-secondary small text-decoration-none hover-primary">Privacy Policy</a>
+                    <a href="#" class="text-secondary small text-decoration-none hover-primary">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Request Audit | AuditNode</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-theme="dark">
+
+    <nav class="navbar navbar-expand-xl navbar-glass">
+        <!-- Content -->
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-shield-lock-fill"></i>
+                <span>Audit<span class="text-primary-accent">Node</span></span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none text-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+                    <a href="#" id="rtlToggle" class="btn btn-outline-secondary d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px; font-size: 0.8rem;" title="Toggle RTL">RTL</a>
+                    <a href="#" id="themeToggle" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Toggle Theme"><i class="bi bi-sun fs-5"></i></a>
+                    <a href="dashboard.html" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Dashboard"><i class="bi bi-speedometer2 fs-5"></i></a>
+                    <a href="login.html" class="btn btn-gradient fw-semibold ms-2">Client Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-secondary-dark border-bottom border-secondary position-relative overflow-hidden">
+        <div id="particles-js" class="position-absolute w-100 h-100 top-0 start-0 opacity-50"></div>
+        <div class="container py-5 text-center position-relative z-index-2 fade-up">
+            <h1 class="display-4 fw-bold">Request an Audit</h1>
+            <p class="lead text-secondary mx-auto mt-3" style="max-width: 600px;">Secure your protocol today. Fill out the form below to receive a custom quote and timeline from our senior security team.</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-5 justify-content-center">
+                
+                <div class="col-lg-7 fade-up">
+                    <div class="glass-card p-5">
+                        <h4 class="mb-4">Project Details</h4>
+                        <form action="dashboard.html">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-secondary small">Your Name</label>
+                                    <input type="text" class="form-control form-control-glass" placeholder="John Doe" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-secondary small">Email Address</label>
+                                    <input type="email" class="form-control form-control-glass" placeholder="john@project.io" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-secondary small">Project Name</label>
+                                    <input type="text" class="form-control form-control-glass" placeholder="e.g. AstroNFT" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-secondary small">Contract Type</label>
+                                    <select class="form-select form-control-glass">
+                                        <option>ERC-721 NFT Minting</option>
+                                        <option>ERC-1155 Collection</option>
+                                        <option>DeFi Staking/Yield</option>
+                                        <option>DAO Governance</option>
+                                        <option>Custom Protocol</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-secondary small">GitHub Repository / Code Link (Optional)</label>
+                                    <input type="url" class="form-control form-control-glass" placeholder="https://github.com/...">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-secondary small">Additional Information</label>
+                                    <textarea class="form-control form-control-glass" rows="4" placeholder="Tell us about the timeline, complexity, and specific areas of concern..."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-gradient w-100 py-3 fw-bold">Submit Request</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 fade-up" style="transition-delay: 0.1s;">
+                    <div class="glass-card p-4 mb-4 neon-border">
+                        <h5 class="mb-4">Contact Info</h5>
+                        <div class="d-flex align-items-center mb-3 text-secondary">
+                            <i class="bi bi-envelope text-primary-accent fs-4 me-3"></i>
+                            <div>
+                                <small class="d-block text-muted">Email Us</small>
+                                <span>security@auditnode.io</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center text-secondary mb-4">
+                            <i class="bi bi-discord text-primary-accent fs-4 me-3"></i>
+                            <div>
+                                <small class="d-block text-muted">Discord Support</small>
+                                <span>AuditNode#1337</span>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Icons -->
+                        <div class="border-top border-secondary pt-4 mt-2">
+                            <h6 class="text-secondary small mb-3">Connect With Us</h6>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="social-icon fs-5"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="social-icon fs-5"><i class="bi bi-github"></i></a>
+                                <a href="#" class="social-icon fs-5"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-icon fs-5"><i class="bi bi-telegram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-4 text-center">
+                        <i class="bi bi-shield-check fs-1 text-success mb-2"></i>
+                        <h5>Secure Communcation</h5>
+                        <p class="text-secondary small mb-3">All project details and source code are handled under strict NDA. We use encrypted channels for sensitive vulnerability disclosures.</p>
+                        <a href="#" class="small text-primary-accent text-decoration-none">View PGP Key <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-secondary-dark border-top border-secondary">
+        <div class="container py-4 fade-up">
+            <div class="text-center mb-5">
+                <span class="text-primary-accent fw-bold text-uppercase small">Global Presence</span>
+                <h2 class="display-6 mt-2">Our Headquarters</h2>
+            </div>
+            <div class="glass-card p-2 border-primary neon-border">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25281005117!2d-74.14448744154446!3d40.69763123334211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1697551000000!5m2!1sen!2s" width="100%" height="400" style="border:0; border-radius: 8px; filter: invert(90%) hue-rotate(180deg) contrast(1.1);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-secondary-dark border-top border-secondary">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-inline-flex" href="index.html">
+                        <i class="bi bi-shield-lock-fill"></i>
+                        <span>Audit<span class="text-primary-accent">Node</span></span>
+                    </a>
+                    <p class="text-secondary mb-4">A world-class NFT smart contract security intelligence platform trusted by elite Web3 projects. We secure the future of decentralized finance and digital assets.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-medium"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Services</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">NFT Audits</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">DeFi Protocols</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">Gas Optimization</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">Penetration Testing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Platform</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="dashboard.html" class="text-secondary text-decoration-none hover-primary">Client Dashboard</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-secondary text-decoration-none hover-primary">Pricing</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-secondary text-decoration-none hover-primary">Contact Us</a></li>
+                        <li class="mb-2"><a href="login.html" class="text-secondary text-decoration-none hover-primary">Client Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-secondary small mb-3">Subscribe for the latest Web3 security alerts and vulnerability insights.</p>
+                    <form class="d-flex gap-2 mb-3">
+                        <input type="email" class="form-control form-control-glass" placeholder="Enter your email">
+                        <button class="btn btn-gradient" type="button">Subscribe</button>
+                    </form>
+                    <small class="text-secondary" style="font-size: 0.75rem;">* We respect your privacy. No spam.</small>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="text-secondary small mb-0">&copy; 2026 AuditNode Security. All rights reserved.</p>
+                <div class="d-flex gap-3 mt-3 mt-md-0">
+                    <a href="#" class="text-secondary small text-decoration-none hover-primary">Privacy Policy</a>
+                    <a href="#" class="text-secondary small text-decoration-none hover-primary">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        if(document.getElementById('particles-js')) {
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": { "value": 20 },
+                    "color": { "value": "#00f5d4" },
+                    "shape": { "type": "circle" },
+                    "opacity": { "value": 0.2 },
+                    "size": { "value": 2 },
+                    "line_linked": { "enable": false },
+                    "move": { "enable": true, "speed": 1 }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | AuditNode</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body data-theme="dark">
+
+    <nav class="navbar navbar-expand-xl navbar-glass">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-shield-lock-fill"></i>
+                <span>Audit<span class="text-primary-accent">Node</span></span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none text-body" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+                    <a href="#" id="rtlToggle" class="btn btn-outline-secondary d-flex align-items-center justify-content-center fw-bold" style="width: 40px; height: 40px; font-size: 0.8rem;" title="Toggle RTL">RTL</a>
+                    <a href="#" id="themeToggle" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Toggle Theme"><i class="bi bi-sun fs-5"></i></a>
+                    <a href="dashboard.html" class="btn btn-outline-secondary d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Dashboard"><i class="bi bi-speedometer2 fs-5"></i></a>
+                    <a href="login.html" class="btn btn-gradient fw-semibold ms-2">Client Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-secondary-dark border-bottom border-secondary">
+        <div class="container py-5 text-center fade-up">
+            <h1 class="display-4 fw-bold">Transparent Pricing</h1>
+            <p class="lead text-secondary mx-auto mt-3" style="max-width: 600px;">Enterprise-grade security without the enterprise opacity. Choose the audit plan that fits your protocol's needs.</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-4 justify-content-center">
+                
+                <!-- Basic Tier -->
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="glass-card h-100 d-flex flex-column">
+                        <div class="mb-4">
+                            <h4 class="mb-2">Standard Review</h4>
+                            <p class="text-secondary small">Ideal for standard ERC-721/1155 NFT minting contracts and simple tokens.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h2 class="display-5 fw-bold mb-0">From $3k</h2>
+                        </div>
+                        <ul class="list-unstyled text-secondary mb-4 flex-grow-1">
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Static Analysis Scan</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> 1 Senior Auditor Review</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Basic Gas Optimization</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Detailed PDF Report</li>
+                            <li class="mb-3 text-muted"><i class="bi bi-x me-2"></i> Penetration Testing</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline-glow w-100">Get Started</a>
+                    </div>
+                </div>
+
+                <!-- Premium Tier -->
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.1s;">
+                    <div class="glass-card h-100 d-flex flex-column neon-border position-relative transform-hover scale-xl-105">
+                        <div class="position-absolute top-0 start-50 translate-middle badge bg-gradient rounded-pill px-3 py-2 text-white" style="background: var(--gradient-accent);">Most Popular</div>
+                        
+                        <div class="mb-4 mt-3">
+                            <h4 class="mb-2 text-primary-accent">DeFi / Enterprise</h4>
+                            <p class="text-secondary small">For complex DeFi protocols, marketplaces, and custom business logic.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h2 class="display-5 fw-bold mb-0">From $8k</h2>
+                        </div>
+                        <ul class="list-unstyled text-secondary mb-4 flex-grow-1">
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-primary-accent me-2"></i> Advanced Static Analysis</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-primary-accent me-2"></i> 2 Senior Auditors (Line-by-Line)</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-primary-accent me-2"></i> Advanced Gas & Assembly Review</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-primary-accent me-2"></i> Free Remediation Re-audit</li>
+                            <li class="mb-3"><i class="bi bi-check-circle-fill text-primary-accent me-2"></i> Public Security Certificate</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-gradient w-100">Request Custom Quote</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECTION: Deliverables -->
+    <section class="py-5 bg-secondary-dark border-top border-secondary">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 fade-up">
+                    <div class="glass-card p-2 border-primary position-relative neon-border">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Audit Report Document" class="img-fluid rounded w-100" style="filter: contrast(1.2);">
+                    </div>
+                </div>
+                <div class="col-lg-7 fade-up" style="transition-delay: 0.1s;">
+                    <span class="text-primary-accent fw-bold text-uppercase small">Deliverables</span>
+                    <h2 class="mb-4 mt-2">Included in Every Audit</h2>
+                    <p class="text-secondary mb-4">Regardless of the tier you choose, every AuditNode client receives enterprise-grade deliverables and support.</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-file-earmark-pdf text-danger fs-3 me-3"></i>
+                                <div>
+                                    <h6 class="mb-1">Detailed PDF Report</h6>
+                                    <p class="text-secondary small mb-0">Comprehensive vulnerability breakdown with exact line numbers and PoCs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-patch-check-fill text-primary-accent fs-3 me-3"></i>
+                                <div>
+                                    <h6 class="mb-1">Security Certificate</h6>
+                                    <p class="text-secondary small mb-0">A verifiable public badge to prove to your community that your code is secure.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-chat-dots text-success fs-3 me-3"></i>
+                                <div>
+                                    <h6 class="mb-1">Direct Auditor Comms</h6>
+                                    <p class="text-secondary small mb-0">Private Telegram/Discord channel directly with the security researchers auditing your code.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-github text-white fs-3 me-3"></i>
+                                <div>
+                                    <h6 class="mb-1">PR Reviews</h6>
+                                    <p class="text-secondary small mb-0">We review your GitHub Pull Requests when you implement our recommended fixes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: Pricing FAQ -->
+    <section class="py-5 border-top border-secondary">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 fade-up">
+                    <span class="text-primary-accent fw-bold text-uppercase small">Support</span>
+                    <h2 class="mb-4 mt-2">Frequently Asked Questions</h2>
+                    <p class="text-secondary mb-5">Have questions about our pricing methodology or auditing timelines? Here's what most clients ask us before getting started.</p>
+                    
+                    <div class="accordion glass-card p-0" id="pricingFAQ">
+                        <div class="accordion-item bg-transparent border-0 border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How is the final quote calculated?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFAQ">
+                                <div class="accordion-body text-secondary small">
+                                    Quotes are based on the complexity of the business logic, the Total Lines of Code (nSLOC), and the required turnaround time. Highly complex DeFi math requires more hours than standard NFT mints.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-0 border-bottom border-secondary">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer free re-audits?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                                <div class="accordion-body text-secondary small">
+                                    Yes, all Premium and Enterprise tiers include one free remediation re-audit to verify that our recommended fixes have been implemented correctly.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                                <div class="accordion-body text-secondary small">
+                                    We accept USDC, USDT, and ETH on the Ethereum, Polygon, and Arbitrum networks, as well as traditional wire transfers.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up" style="transition-delay: 0.1s;">
+                    <div class="glass-card p-2 border-primary position-relative neon-border h-100 d-flex align-items-center justify-content-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=800&q=80" alt="Blockchain Security Abstract" class="img-fluid rounded w-100 h-100" style="object-fit: cover; opacity: 0.8; filter: hue-rotate(20deg) contrast(1.1);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-secondary-dark border-top border-secondary">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-4 d-inline-flex" href="index.html">
+                        <i class="bi bi-shield-lock-fill"></i>
+                        <span>Audit<span class="text-primary-accent">Node</span></span>
+                    </a>
+                    <p class="text-secondary mb-4">A world-class NFT smart contract security intelligence platform trusted by elite Web3 projects. We secure the future of decentralized finance and digital assets.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-medium"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Services</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">NFT Audits</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">DeFi Protocols</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">Gas Optimization</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-secondary text-decoration-none hover-primary">Penetration Testing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Platform</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2"><a href="dashboard.html" class="text-secondary text-decoration-none hover-primary">Client Dashboard</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-secondary text-decoration-none hover-primary">Pricing</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-secondary text-decoration-none hover-primary">Contact Us</a></li>
+                        <li class="mb-2"><a href="login.html" class="text-secondary text-decoration-none hover-primary">Client Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p class="text-secondary small mb-3">Subscribe for the latest Web3 security alerts and vulnerability insights.</p>
+                    <form class="d-flex gap-2 mb-3">
+                        <input type="email" class="form-control form-control-glass" placeholder="Enter your email">
+                        <button class="btn btn-gradient" type="button">Subscribe</button>
+                    </form>
+                    <small class="text-secondary" style="font-size: 0.75rem;">* We respect your privacy. No spam.</small>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="text-secondary small mb-0">&copy; 2026 AuditNode Security. All rights reserved.</p>
+                <div class="d-flex gap-3 mt-3 mt-md-0">
+                    <a href="#" class="text-secondary small text-decoration-none hover-primary">Privacy Policy</a>
+                    <a href="#" class="text-secondary small text-decoration-none hover-primary">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

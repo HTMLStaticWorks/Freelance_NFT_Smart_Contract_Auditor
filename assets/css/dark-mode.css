@@ -1,0 +1,4 @@
+/* Dark Mode Specific Overrides if needed. Base is already dark, so we can leave this mostly empty or put dark-specific overrides here. */
+[data-theme="dark"] {
+    /* Most dark styles are defined as default in style.css */
+}
