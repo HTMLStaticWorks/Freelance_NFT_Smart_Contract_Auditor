@@ -203,7 +203,7 @@ a:hover {
 
 /* Home hero CTA size consistency */
 .hero-cta-btn {
-    min-width: 265px;
+    width: min(100%, 340px);
     min-height: 48px;
     display: inline-flex;
     align-items: center;
