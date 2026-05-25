@@ -175,7 +175,7 @@ function initCharts() {
                     backgroundColor: [
                         '#ef4444', // Alert Red
                         '#f59e0b', // Warning
-                        '#7c3aed', // Secondary Accent
+                        '#00f5d4', // Brand Accent
                         '#00f5d4'  // Primary Accent
                     ],
                     borderWidth: 0,

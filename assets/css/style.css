@@ -4,15 +4,15 @@
     --secondary-bg: #0d1326;
     --card-bg: rgba(255, 255, 255, 0.05);
     --primary-accent: #00f5d4;
-    --secondary-accent: #7c3aed;
+    --secondary-accent: #00f5d4;
     --alert-red: #ef4444;
     --warning: #f59e0b;
     --success: #22c55e;
     --text-primary: #ffffff;
     --text-secondary: #aab3c5;
-    --border-color: rgba(255, 255, 255, 0.08);
+    --border-color: rgba(255, 255, 255, 0.04);
     --glow-color: rgba(0, 245, 212, 0.24);
-    --gradient-accent: linear-gradient(135deg, #00f5d4, #7c3aed);
+    --gradient-accent: linear-gradient(135deg, #00f5d4, #00f5d4);
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
     --navbar-bg: rgba(6, 8, 22, 0.8);
@@ -23,15 +23,15 @@
     --primary-bg: #f8fafc;
     --secondary-bg: #ffffff;
     --card-bg: #ffffff;
-    --primary-accent: #059669; /* Darker teal for contrast */
-    --secondary-accent: #6d28d9;
+    --primary-accent: #00f5d4;
+    --secondary-accent: #00f5d4;
     --alert-red: #dc2626;
     --warning: #d97706;
     --success: #16a34a;
     --text-primary: #0f172a;
     --text-secondary: #475569;
-    --border-color: rgba(0, 0, 0, 0.1);
-    --glow-color: rgba(5, 150, 105, 0.15);
+    --border-color: rgba(15, 23, 42, 0.08);
+    --glow-color: rgba(0, 245, 212, 0.24);
     --navbar-bg: rgba(255, 255, 255, 0.8);
     --sidebar-bg: rgba(255, 255, 255, 0.95);
 }
@@ -49,6 +49,16 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Softer section and utility borders for a cleaner visual style */
+.border,
+.border-top,
+.border-end,
+.border-bottom,
+.border-start,
+.border-secondary {
+    border-color: var(--border-color) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -175,7 +185,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #7c3aed, #00f5d4);
+    background: linear-gradient(135deg, #00f5d4, #00f5d4);
     z-index: -1;
     transition: opacity 0.3s ease;
     opacity: 0;
@@ -513,6 +523,24 @@ a:hover {
 @media (max-width: 1199.98px) {
     .navbar-nav .nav-link::after {
         display: none;
+    }
+
+    .navbar-glass .container-fluid {
+        position: relative;
+    }
+
+    .navbar-glass .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1029;
+        background: var(--sidebar-bg);
+        border: 1px solid var(--border-color);
+        border-top: 0;
+        border-radius: 0 0 12px 12px;
+        padding: 0.75rem 1rem 1rem;
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
     }
 
     .flexible-pricing-section .row.align-items-center {
