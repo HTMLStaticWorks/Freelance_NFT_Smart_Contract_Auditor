@@ -60,6 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Mobile Menu Scroll Lock ---
+    const navbarNav = document.getElementById('navbarNav');
+    if (navbarNav) {
+        navbarNav.addEventListener('show.bs.collapse', () => {
+            document.body.style.overflow = 'hidden';
+        });
+        navbarNav.addEventListener('hidden.bs.collapse', () => {
+            document.body.style.overflow = '';
+        });
+    }
+
     // --- Copy Code Interaction ---
     const copyBtns = document.querySelectorAll('.copy-btn');
     copyBtns.forEach(btn => {
